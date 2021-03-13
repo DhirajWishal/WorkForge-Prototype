@@ -1,0 +1,1 @@
+window.open("Login.html", "_blank");

@@ -1,0 +1,60 @@
+*{
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+body{
+  background-color: #F8F5F2;
+}
+
+.loginform {
+    position: relative;
+    padding: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.loginform img {
+  width: 450px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+form {border: 3px solid #F8F5F2;}
+
+.loginformdata {
+  text-align: center;
+  padding: 150px;
+  left: 20%;
+  align-content: center;
+  background-color: #F8F5F2;
+}
+
+.loginformdata input[type=text], input[type=password] {
+    width: 40rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    border-radius: 5rem;
+    margin-left:3em
+  }
+
+.loginformdata input[type=submit] {
+  background-color: #133C55;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20rem;
+  border-radius: 5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+

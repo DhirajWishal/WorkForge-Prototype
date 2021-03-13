@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WorkForge - Editor</title>
+    <link rel="stylesheet" href="Editor.css" media="screen">
+    <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="EditorUtilities.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- Load and Save option. -->
+    <div>
+        <button id="LoadFile">Load File</button>
+        <button id="SaveFile">Save File</button>
+        <button id="SaveFileAs">Save As</button>
+        <button id="CreateNew">Create New</button>
+
+        <!-- Select editor theme. -->
+        <label>Select Theme:</label>
+        <select id="ThemeSelector">
+            <option selected>Dark Theme</option>
+            <option>Lignt Theme</option>
+            <option>GitHub Theme</option>
+        </select>
+    </div>
+
+    <!-- The code editor space. -->
+    <pre id="editor_window" style="height: 90vh; width: 75vw;">
+        <div id="editor"></div>
+    </pre>
+
+    <!-- Current working file information. -->
+    <div>
+        Working file:
+        <code id="FileTitle" contenteditable="false" style="text-decoration: underline;"></code>
+    </div>
+
+    <script src="EventListeners.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+    "name": "WorkForge",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "WorkForge prototype application",
+    "browser_action": {
+        "default_title": "WorkForge",
+        "default_popup": "LauncherUI.html"
+    },
+    "web_accessible_resources": [
+        "LauncherUI.html",
+        "Login.html",
+        "Editor/Editor.html"
+    ],
+    "icons": {
+        "16": "Icons/icon-16.png",
+        "32": "Icons/icon-32.png",
+        "48": "Icons/icon-48.png",
+        "128": "Icons/icon-128.png"
+      }
+}
