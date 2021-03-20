@@ -1,15 +1,16 @@
-<img src="https://github.com/DhirajWishal/WorkForge-Prototype/blob/main/Logo%20-4%20workforge.png" />
+<img  src="https://github.com/DhirajWishal/WorkForge-Prototype/blob/main/Logo%20-4%20workforge.png"  />
+
 WorkForge project prototype for the IEEE Hackfest 2021.
 
-# How to use 
-This project requires [Google Chrome](https://www.google.com/chrome/).
+# How to use
 
-Either download the repository as a zip file or use [GitBash](https://git-scm.com/)
-```
-> git clone https://github.com/DhirajWishal/WorkForge-Prototype WorkForge
-```
+This project is made as a client-server application and requires an updated browser to run.
 
-Once placed locally, open Google Chrome and head to `chrome://extensions` and enable developer mode. Then load the project folder in `Load unpacked`. After this, click on the extension and it will present you with the login.
+Just run the `Execute.bat` file which will initiate the server and go to the browser and type 
+```
+localhost:8080/Client/Index.html
+```
 
 # License
+
 This repository is licensed under the MIT.

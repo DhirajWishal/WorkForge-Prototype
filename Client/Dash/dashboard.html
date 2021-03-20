@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <link href="dash.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <title>Dashboard - WorkForge</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container">
+            <img src="../Logo -4 workforge white.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#zzz"> DASHBOARD </a></li>
+                    <li><a href="#zzz"> PROJECTS </a></li>
+                    <li><a href="#zzz"> PROFILE </a></li>
+                    <li><a href="#zzz"> LOG OUT </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN PAGE -->
+    <div class="main">
+        <div class="welcome">
+            <h1>Welcome <a class="userid">ZOOMER</a>!</h1>
+        </div>
+
+        <div class="projects">
+            <h3>Current Projects</h3>
+            <table class="projecttb">
+                <tr>
+                    <th>User</th>
+                    <th>File</th>
+                    <th>Opened</th>
+                    <th>Last Saved</th>
+                </tr>
+
+                <tr>
+                    <td>Clark Kent</td>
+                    <td> <a href="#" target="_blank" onclick="OpenInEditor('TestFiles/Blob.py')"> Blob.py </a></td>
+                    <td class="timecheck">10.21am</td>
+                    <td class="timecheck">12.04pm</td>
+                </tr>
+                <tr>
+                    <td>Bruce Wayne</td>
+                    <td><a href="#" target="_blank" onclick="OpenInEditor('TestFiles/Cat.js')"> Cat.js </a></td>
+                    <td class="timecheck">10.31am</td>
+                    <td class="timecheck">12.09pm</td>
+                </tr>
+                <tr>
+                    <td>Diana Prince</td>
+                    <td><a href="#" target="_blank" onclick="OpenInEditor('TestFiles/Hmmm.cpp')"> Hmmm.cpp </a></td>
+                    <td class="timecheck">10.31am</td>
+                    <td class="timecheck">12.09pm</td>
+                </tr>
+                <tr>
+                    <td>Bartholomew Allen</td>
+                    <td><a href="#" target="_blank" onclick="OpenInEditor('TestFiles/Local.js')"> Local.js </a></td>
+                    <td class="timecheck">10.31am</td>
+                    <td class="timecheck">12.09pm</td>
+                </tr>
+                <tr>
+                    <td>Victor Stone</td>
+                    <td><a href="#" target="_blank" onclick="OpenInEditor('TestFiles/Pssst.cpp')"> Pssst.cpp </a></td>
+                    <td class="timecheck">10.31am</td>
+                    <td class="timecheck">12.09pm</td>
+                </tr>
+
+                <script>
+                    function OpenInEditor(file) {
+                        window.open("../Editor/Editor.html?" + file, "_blank");
+                    }
+                </script>
+            </table>
+        </div>
+    </div>
+    <div class="emp">
+        <h2>Project Teammates</h2>
+        <div class="profilecont">
+            <div class="card">
+                <img src="Profileimg/clark kent.jpg" class="card-img">
+                <div class="card-text">
+                    <h3 class="card-title">Clark Kent</h3>
+                    <p class="card-body">Contact - ckent@jl.io</p>
+                    <p class="card-body">Status - <a class="active-stat">ACTIVE</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Profileimg/bruce wayne.jpg" class="card-img">
+                <div class="card-text">
+                    <h3 class="card-title">Bruce Wayne</h3>
+                    <p class="card-body">Contact - bwayne@jl.io</p>
+                    <p class="card-body">Status - <a class="active-stat">ACTIVE</a></p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="Profileimg/diana prince.jpg" class="card-img">
+                <div class="card-text">
+                    <h3 class="card-title">Diana Prince</h3>
+                    <p class="card-body">Contact - dprince@jl.io</p>
+                    <p class="card-body">Status - <a class="active-stat">ACTIVE</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Profileimg/lois lane.jpg" class="card-img">
+                <div class="card-text">
+                    <h3 class="card-title">Lois Lane</h3>
+                    <p class="card-body">Contact - llane@jl.io</p>
+                    <p class="card-body">Status - <a class="inactive-stat">INACTIVE</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Profileimg/victor stone.jpg" class="card-img">
+                <div class="card-text">
+                    <h3 class="card-title">Victor Stone</h3>
+                    <p class="card-body">Contact - vstone@jl.io</p>
+                    <p class="card-body">Status - <a class="active-stat">ACTIVE</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Profileimg/barry allen.jpg" class="card-img">
+                <div class="card-text">
+                    <h3 class="card-title">Bartholomew Allen</h3>
+                    <p class="card-body">Contact - ballen@jl.io</p>
+                    <p class="card-body">Status - <a class="active-stat">ACTIVE</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footertxt">© Developed by Team Zoomers for HackFest 2021 organized by Kothalawala Defense University.
+            All rights reserved. 2021</p>
+    </div>
+</body>
+
+</html>
