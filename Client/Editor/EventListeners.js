@@ -11,8 +11,7 @@ document.getElementById("LoadFile").addEventListener("click", function () {
     if (file == "") {
         alert("The provided file path is invalid!")
         return;
-    }
-    else {
+    } else {
         ReRollFileType(file.split('.').pop());
         ReadFile(file, SubmitContent);
 

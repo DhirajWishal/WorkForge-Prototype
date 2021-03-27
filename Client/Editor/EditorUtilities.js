@@ -98,13 +98,15 @@ function ReadFile(file, callback) {
  * @param {*} content The content to be written.
  */
 function WriteFile(file, content) {
-    const formData = new Blob([content], { type: "text/plain" });
+    const formData = new Blob([content], {
+        type: "text/plain"
+    });
     alert(file);
 
     fetch(file, {
-        method: 'PUT',
-        body: formData
-    })
+            method: 'PUT',
+            body: formData
+        })
         .then(result => {
             console.log('Success:', result);
         })
@@ -118,10 +120,13 @@ function WriteFile(file, content) {
 function killCopy(e) {
     return false
 }
+
 function reEnable() {
     return true
 }
-document.onselectstart = function (...args) { return false; }
+document.onselectstart = function (...args) {
+    return false;
+}
 if (window.sidebar) {
     document.onmousedown = killCopy
     document.onclick = reEnable
