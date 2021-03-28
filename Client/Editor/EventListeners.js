@@ -56,3 +56,11 @@ selector.onchange = function () {
 }
 
 document.getElementById("FileTitle").innerHTML = currentFile;
+
+function BeginOverlay() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function EndOverlay() {
+    document.getElementById("overlay").style.display = "none";
+}

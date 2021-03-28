@@ -6,13 +6,14 @@
 
     <link rel="stylesheet" href="Editor.css" media="screen">
     <link rel="stylesheet" href="ChatWindow.css" media="screen">
+    <link rel="stylesheet" href="../Dash/dash.css" media="screen">
     <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="EditorUtilities.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
-<body>
-    <div id="main" style="padding: 0">
+<body style="background-color: rgba(56, 56, 56, 255)">
+    <div id="main" style="padding: 0;">
         <!-- Chat window -->
         <div id="overlay" onclick="EndOverlay()">
             <widgetbot id="text" server="816675952427532309" channel="822320826925449217" width="50%" height="90%">
@@ -21,46 +22,49 @@
         </div>
 
         <!-- Load and Save option. -->
-        <div>
-            <button id="LoadFile">Load File</button>
-            <button id="SaveFile">Save File</button>
-            <button id="SaveFileAs">Save As</button>
-            <button id="CreateNew">Create New</button>
+        <div class="container">
+            <img src="../Logo -4 workforge white.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a id="LoadFile">LOAD</a></li>
+                    <li><a id="SaveFile">SAVE</a></li>
+                    <li><a id="SaveFileAs">SAVE AS</a></li>
+                    <li><a id="CreateNew">NEW</a></li>
+                    <li><a onclick="BeginOverlay()">DISCORD</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <!-- The code editor space. -->
+        <div>
+            <pre class="editor_window" style="height: 92vh; width: 99vw;">
+            <code id="editor"></code>
+        </pre>
+        </div>
+
+        <!-- Additional information -->
+        <div style="color: white;" class="footer">
             <!-- Select editor theme. -->
             <label>Select Theme:</label>
-            <select id="ThemeSelector">
+            <select id="ThemeSelector"
+                style="background-color: rgba(60, 60, 60, 255); color: white;">
                 <option value="dark" selected>Dark Theme</option>
                 <option value="light">Lignt Theme</option>
                 <option value="github">GitHub Theme</option>
             </select>
 
-            <button onclick="BeginOverlay()">Discord</button>
+            <p class="footertxt">© Developed by Team Zoomers for HackFest 2021 organized by Kothalawala Defense
+                University.
+                All rights reserved. 2021</p>
 
-            Working file:
-            <code id="FileTitle" contenteditable="false" style="text-decoration: underline;"></code>
+            <p style="text-align:center;">Working file:
+                <code id="FileTitle" contenteditable="false" style="text-decoration: underline;"></code>
+            </p>
+
         </div>
-
-
-        <script>
-            function BeginOverlay() {
-                document.getElementById("overlay").style.display = "block";
-            }
-
-            function EndOverlay() {
-                document.getElementById("overlay").style.display = "none";
-            }
-        </script>
-
-        <!-- The code editor space. -->
-        <div>
-            <pre class="editor_window" style="height: 93vh; width: 99vw;">
-            <code id="editor"></code>
-        </pre>
-        </div>
-
-        <script src="EventListeners.js"></script>
     </div>
+
+    <script src="EventListeners.js"></script>
 </body>
 
 </html>

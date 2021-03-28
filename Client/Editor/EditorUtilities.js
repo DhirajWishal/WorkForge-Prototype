@@ -69,7 +69,7 @@ function ChangeTheme(theme) {
     var editor = GetEditor();
     var data = editor.session.getValue();
 
-    if (theme == "dark")
+    if (theme == "dark") 
         editor.setTheme('ace/theme/monokai');
     else if (theme == "light")
         editor.setTheme('ace/theme/chrome');
